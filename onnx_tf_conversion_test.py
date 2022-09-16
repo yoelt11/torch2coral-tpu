@@ -16,7 +16,7 @@ if __name__ == '__main__':
     # load onnx model
     onnx_model = ort.InferenceSession("onnx-model/onnx_model.onnx")
    
-    # run inference ft
+    # run inference tf
     tf_output = inference_fn(tf.constant(X))
 
     # run inference onnx
